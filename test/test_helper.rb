@@ -15,7 +15,13 @@ Minitest::Reporters.use!(
   Minitest.backtrace_filter
 )
 
-Time.zone = 'Central Time (US & Canada)'
+#
+# Randomly set an American timezone to help expose timezone-related bugs:
+#
+_us_time_zones = ActiveSupport::TimeZone.us_zones.map(&:name)
+Time.zone = _us_time_zones[rand(_us_time_zones.length)]
+puts "[Setting random US timezone: #{Time.zone}]"
+
 
 I18n.backend.store_translations :en, {
   time: {
