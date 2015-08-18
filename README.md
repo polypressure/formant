@@ -1,5 +1,10 @@
 # Formant
 
+[![Build Status](https://travis-ci.org/polypressure/formant.svg?branch=master)](https://travis-ci.org/polypressure/formant)
+[![Test Coverage](https://codeclimate.com/github/polypressure/formant/badges/coverage.svg)](https://codeclimate.com/github/polypressure/formant/coverage)
+[![Code Climate](https://codeclimate.com/github/polypressure/formant/badges/gpa.svg)](https://codeclimate.com/github/polypressure/formant)
+
+
 Formant is a tiny library that provides a simplified, minimalistic form object implementation for Rails applications. A form object is a simple, (mostly) plain-old Ruby object, separate from your ActiveRecord models, that lets you collect and validate input. A bit more specifically, Formant helps you to keep any input parsing, normalization, validation, and formatting logic related to form processing out of your ActiveRecord models, ensuring that they stay lean and focused on persistence.
 
 Form objects also simplify the collection of input from complicated forms. With form objects, when collecting input that involves multiple ActiveRecord models, you can avoid having to use something like `accepts_nested_attributes_for`. Instead, you define a single form object containing all the necessary fields spanning multiple models. You use this single form object in place of the multiple ActiveRecord models within your view, form, and controller. You can then parse, normalize, and validate that input in one place, and pass/distribute the form field values to whatever number of model objects are required by your business logic.
