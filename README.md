@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/polypressure/formant.svg?branch=master)](https://travis-ci.org/polypressure/formant)
 [![Test Coverage](https://codeclimate.com/github/polypressure/formant/badges/coverage.svg)](https://codeclimate.com/github/polypressure/formant/coverage)
 [![Code Climate](https://codeclimate.com/github/polypressure/formant/badges/gpa.svg)](https://codeclimate.com/github/polypressure/formant)
+[![Gem Version](https://badge.fury.io/rb/formant.svg)](http://badge.fury.io/rb/formant)
 [![security](https://hakiri.io/github/polypressure/formant/master.svg)](https://hakiri.io/github/polypressure/formant/master)
 [![Dependency Status](https://gemnasium.com/polypressure/formant.svg)](https://gemnasium.com/polypressure/formant)
 
