@@ -15,6 +15,8 @@ Minitest::Reporters.use!(
   Minitest.backtrace_filter
 )
 
+ActiveSupport::TestCase.test_order = :random
+
 #
 # Randomly set an American timezone to help expose timezone-related bugs:
 #
