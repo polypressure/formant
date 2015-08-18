@@ -1,7 +1,6 @@
 require 'test_helper'
 
-class FormantTest < Minitest::Test
-  extend DefineTestNamesWithStrings
+class FormantTest < ActiveSupport::TestCase
 
   test "initialize form object from hash" do
     form = UserForm.new({
