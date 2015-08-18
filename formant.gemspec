@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency 'phony_rails', '~> 0.12.9'
+  
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "activemodel", "~>4.0"
@@ -27,6 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'm', '~> 1.3', '>= 1.3.1'
   spec.add_development_dependency 'minitest-reporters', '~> 1.0', '>= 1.0.19'
   spec.add_development_dependency "codeclimate-test-reporter", '~> 0.4.7'
-  spec.add_development_dependency 'phony_rails', '~> 0.12.9'
 
 end
