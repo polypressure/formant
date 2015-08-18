@@ -24,9 +24,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "activesupport", "~>4.0"
   spec.add_development_dependency "actionview", "~>4.0"
   spec.add_development_dependency "minitest", "~> 5.5"
-  spec.add_development_dependency "m", "~> 1.3.1"
-  spec.add_development_dependency 'minitest-reporters'
-  spec.add_development_dependency "codeclimate-test-reporter"
-  spec.add_development_dependency 'phony_rails'
+  spec.add_development_dependency 'm', '~> 1.3', '>= 1.3.1'
+  spec.add_development_dependency 'minitest-reporters', '~> 1.0', '>= 1.0.19'
+  spec.add_development_dependency "codeclimate-test-reporter", '~> 0.4.7'
+  spec.add_development_dependency 'phony_rails', '~> 0.12.9'
 
 end
